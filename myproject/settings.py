@@ -33,7 +33,6 @@ INSTALLED_APPS = [
     'blog',
     'account',
     'bootstrapform',
-    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -123,29 +122,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# Cloudinary
-
-cloudinary.config = (
-    cloud_name = "dfprbprks",
-    api_key = "813466657162928",
-    api_secret = "QvEvh9BzxB6NW2oLGc8AcpXy5mo",
-)
-
-
 # Static files (CSS, Js e images)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-#STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static")
-#]
+STATICFILES_DIRS = [
+     os.path.join(BASE_DIR, "static")
+]
 
-# MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
 
 
-#MEDIA_ROOT = "{}/media".format(BASE_DIR)
+MEDIA_ROOT = "{}/media".format(BASE_DIR)
 
 LOGIN_REDIRECT_URL = '/'
 
