@@ -6,7 +6,7 @@ class PostForm(ModelForm):
     image = forms.ImageField()
     class Meta:
         model = Post
-        fields = ['title', 'slug', 'image', 'body', 'author', 'status']
+        fields = ['title', 'slug', 'image_url', 'body', 'author', 'status']
 
 
 class ContactForm(forms.Form):
