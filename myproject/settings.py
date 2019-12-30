@@ -125,10 +125,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Cloudinary
 
-CLOUDINARY = {
-    'cloud_name': 'dfprbprks',
-    'api_key': '813466657162928',
-    'api_secret': 'QvEvh9BzxB6NW2oLGc8AcpXy5mo',
+cloudinary.config = {
+    cloud_name: 'dfprbprks',
+    api_key: '813466657162928',
+    api_secret: 'QvEvh9BzxB6NW2oLGc8AcpXy5mo',
         
 }
 
