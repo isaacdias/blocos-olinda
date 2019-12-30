@@ -135,8 +135,6 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = "{}/media".format(BASE_DIR)
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '/'
