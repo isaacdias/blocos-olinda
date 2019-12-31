@@ -123,8 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Static files (CSS, Js e images)
 
+# Static files (CSS, JS)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
@@ -134,16 +134,13 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 
-
-# MEDIA_ROOT = "{}/media".format(BASE_DIR)
-
 LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '/'
 
 LOGIN_URL = '/account/login'
 
-# AWS storage
+# AWS S3 storage
 
 AWS_ACCESS_KEY_ID = 'AKIAQEZEWUMJVMJPIVWU'
 AWS_SECRET_ACCESS_KEY = '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'
