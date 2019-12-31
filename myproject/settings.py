@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'blog',
     'account',
     'bootstrapform',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -134,7 +135,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 
 
-MEDIA_ROOT = "{}/media".format(BASE_DIR)
+# MEDIA_ROOT = "{}/media".format(BASE_DIR)
 
 LOGIN_REDIRECT_URL = '/'
 
@@ -142,4 +143,13 @@ LOGOUT_REDIRECT_URL = '/'
 
 LOGIN_URL = '/account/login'
 
+# AWS storage
 
+AWS_ACCESS_KEY_ID = 'AKIAQEZEWUMJVMJPIVWU'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'media-blog-olinda'
+
+AWS_S3_FILE_OVERWRITE = True
+AWS_DEFAULT_ACL = None
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
